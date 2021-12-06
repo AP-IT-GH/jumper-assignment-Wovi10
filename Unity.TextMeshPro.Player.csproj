@@ -313,6 +313,36 @@
  <Reference Include="Newtonsoft.Json">
  <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/AOT/Newtonsoft.Json.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Burst.Unsafe">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.Unsafe.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.Protobuf">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.barracuda@2.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Interactive.Async">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.ml-agents@2.0.0/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Burst.Cecil">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Burst.Cecil.Pdb">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Abstractions.TestingHelpers">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.ml-agents@2.0.0/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Abstractions">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.ml-agents@2.0.0/Plugins/System.IO.Abstractions.dll</HintPath>
+ </Reference>
+ <Reference Include="Grpc.Core">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.ml-agents@2.0.0/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Burst.Cecil.Mdb">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Burst.Cecil.Rocks">
+ <HintPath>D:/School/3dejaar/VR Experience/Assignments/Jumper/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+ </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Programma&apos;s/2020.3.23f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
  </Reference>
