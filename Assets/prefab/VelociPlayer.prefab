@@ -2156,7 +2156,10 @@ GameObject:
   - component: {fileID: 1544456093055833328}
   - component: {fileID: 4512525106589389468}
   - component: {fileID: 4512525106589389471}
+<<<<<<< Updated upstream
   - component: {fileID: 3505699024870318318}
+=======
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: VelociPlayer
   m_TagString: Untagged
@@ -2338,6 +2341,7 @@ MonoBehaviour:
   deathClips:
   - {fileID: 8300000, guid: 399d4fa3cddfd664cb117049933b2554, type: 3}
   - {fileID: 8300000, guid: 655ae2339de0ea14c8adefdcb28e2ffa, type: 3}
+<<<<<<< Updated upstream
 --- !u!54 &3505699024870318318
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2354,6 +2358,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &5780434305080857134
 GameObject:
   m_ObjectHideFlags: 0

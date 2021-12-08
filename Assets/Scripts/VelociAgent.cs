@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 using System;
+=======
+>>>>>>> Stashed changes
 using System.Collections;
 using System.Collections.Generic;
 using Unity.MLAgents;
@@ -7,6 +10,7 @@ using UnityEngine;
 
 public class VelociAgent : Agent
 {
+<<<<<<< Updated upstream
     public float SmallJumpAmount = 1.0f;
     private Rigidbody rb;
 
@@ -15,6 +19,12 @@ public class VelociAgent : Agent
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+=======
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+>>>>>>> Stashed changes
     }
     
     public override void OnEpisodeBegin()
@@ -30,13 +40,18 @@ public class VelociAgent : Agent
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
+<<<<<<< Updated upstream
         var actionsOutDiscrete = actionsOut.DiscreteActions;
         if (Input.GetKey(KeyCode.Space))
             actionsOutDiscrete[0] = 1;
+=======
+        base.Heuristic(in actionsOut);
+>>>>>>> Stashed changes
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+<<<<<<< Updated upstream
         var actionsDiscrete = actions.DiscreteActions;
         if (actionsDiscrete[0] == 1)
         {
@@ -58,5 +73,8 @@ public class VelociAgent : Agent
     {
         if (collision.gameObject.CompareTag("Plane"))
             canJump = true;
+=======
+        base.OnActionReceived(actions);
+>>>>>>> Stashed changes
     }
 }

@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1 &103147499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6245735662102833877, guid: 44d8d3eff3b4e4e4b98a08c996331fa1, type: 3}
@@ -191,6 +192,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103147499}
   m_Mesh: {fileID: 9032211912471331765, guid: 6bcc76aebcc27f641a1ba39f7e8e5fe6, type: 3}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &141309699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1152,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 141309700}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 2390410133728649692, guid: 44d8d3eff3b4e4e4b98a08c996331fa1, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1165,6 +1169,8 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 4312897458163748224, guid: 44d8d3eff3b4e4e4b98a08c996331fa1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -1193,6 +1199,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: VelociPlayer
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 8384209879583358529, guid: 44d8d3eff3b4e4e4b98a08c996331fa1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -1209,6 +1216,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 8927543363525376394, guid: 44d8d3eff3b4e4e4b98a08c996331fa1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1274,6 +1283,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 5
   TakeActionsBetweenDecisions: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &659620028499620853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659620028499620851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b6042bc9a5d4aa58d931eae49442e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+>>>>>>> Stashed changes
 --- !u!114 &659620028499620854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1287,8 +1315,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SensorName: RayPerceptionSensor
+<<<<<<< Updated upstream
   m_DetectableTags:
   - Enemy
+=======
+  m_DetectableTags: []
+>>>>>>> Stashed changes
   m_RaysPerDirection: 3
   m_MaxRayDegrees: 70
   m_SphereCastRadius: 0.5
@@ -1299,8 +1331,13 @@ MonoBehaviour:
   m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_StartVerticalOffset: 0.6
   m_EndVerticalOffset: 1
+=======
+  m_StartVerticalOffset: 0
+  m_EndVerticalOffset: 0
+>>>>>>> Stashed changes
 --- !u!114 &659620028499620855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,14 +1355,23 @@ MonoBehaviour:
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
+<<<<<<< Updated upstream
       BranchSizes: 03000000
     VectorActionSize: 03000000
+=======
+      BranchSizes: 01000000
+    VectorActionSize: 01000000
+>>>>>>> Stashed changes
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
+<<<<<<< Updated upstream
   m_BehaviorType: 1
+=======
+  m_BehaviorType: 0
+>>>>>>> Stashed changes
   m_BehaviorName: My Behavior
   TeamId: 0
   m_UseChildSensors: 1
@@ -1347,7 +1393,10 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+<<<<<<< Updated upstream
   SmallJumpAmount: 7
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &2928426481639660137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1355,10 +1404,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 141309700}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 4804912967571186899, guid: ee814374b01563545aefe40fd6381657, type: 3}
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 6238062662191230782, guid: ee814374b01563545aefe40fd6381657, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1415,10 +1467,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 6975601305050021180, guid: ee814374b01563545aefe40fd6381657, type: 3}
       propertyPath: m_TagString
       value: Plane
       objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee814374b01563545aefe40fd6381657, type: 3}
 --- !u!4 &2928426481639660138 stripped
