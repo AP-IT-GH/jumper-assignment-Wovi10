@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyDespawner : MonoBehaviour
 {
+    public VelociAgent agent;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class EnemyDespawner : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("With enemy");
-            Destroy(collision.gameObject);   
+            Destroy(collision.gameObject);
+            agent.AddReward(2.0f);
         }
     }
 }

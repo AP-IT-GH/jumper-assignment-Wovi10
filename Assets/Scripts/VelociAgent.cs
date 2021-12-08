@@ -1,63 +1,76 @@
-<<<<<<< Updated upstream
 using System;
-=======
->>>>>>> Stashed changes
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using UnityEngine;
 
 public class VelociAgent : Agent
 {
-<<<<<<< Updated upstream
-    public float SmallJumpAmount = 1.0f;
+    private float SmallJumpAmount = 8.0f;
+    public float BigJumpAmount = 16.0f;
+    public TextMeshPro tmp;
     private Rigidbody rb;
+    private Vector3 agentStartPosition;
+    public EnemySpawner spawner;
 
     private bool canJump = true;
+
+    public override void OnEpisodeBegin()
+    {
+        this.transform.localPosition = agentStartPosition;
+        
+        spawner.ClearEnemies();
+        //DestroyEnemies();
+    }
+
+    private static void DestroyEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            GameObject.Destroy(enemy);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-=======
-    // Start is called before the first frame update
-    void Start()
-    {
-        
->>>>>>> Stashed changes
+        agentStartPosition = this.transform.localPosition;
     }
     
-    public override void OnEpisodeBegin()
-    {
-        base.OnEpisodeBegin();
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        tmp.text = GetCumulativeReward().ToString();
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-<<<<<<< Updated upstream
         var actionsOutDiscrete = actionsOut.DiscreteActions;
         if (Input.GetKey(KeyCode.Space))
             actionsOutDiscrete[0] = 1;
-=======
-        base.Heuristic(in actionsOut);
->>>>>>> Stashed changes
+        
+        if (Input.GetKey(KeyCode.UpArrow))
+            actionsOutDiscrete[0] = 2;
     }
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-<<<<<<< Updated upstream
         var actionsDiscrete = actions.DiscreteActions;
         if (actionsDiscrete[0] == 1)
         {
             Debug.Log("Small jump");
-            SmallJump();   
+            SmallJump();
         }
+        else if (actionsDiscrete[0] == 2)
+        {
+            Debug.Log("Big jump");
+            BigJump();
+        }
+        
     }
 
     private void SmallJump()
@@ -66,15 +79,32 @@ public class VelociAgent : Agent
         {
             canJump = false;
             rb.AddForce(Vector2.up * SmallJumpAmount, ForceMode.Impulse);
+            AddReward(-0.005f);
+        }
+    }
+    
+    private void BigJump()
+    {
+        if (canJump)
+        {
+            canJump = false;
+            rb.AddForce(Vector2.up * SmallJumpAmount, ForceMode.Impulse);
+            AddReward(-0.015f);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collision");
+        
         if (collision.gameObject.CompareTag("Plane"))
             canJump = true;
-=======
-        base.OnActionReceived(actions);
->>>>>>> Stashed changes
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy hit");
+            AddReward(-1f);
+            EndEpisode();
+        }
     }
 }
